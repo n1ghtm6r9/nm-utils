@@ -1,0 +1,38 @@
+{
+  "name": "@nmxjs/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "echo [@nmxjs/utils has no start script]",
+    "clear": "rm -rf dist",
+    "build": "yarn clear; tsc",
+    "test": "jest --config=jest.config.js --runInBand --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1ghtm6r9/nm-utils.git"
+  },
+  "keywords": [],
+  "author": "N1ghtm6r9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n1ghtm6r9/nm-utils/issues"
+  },
+  "homepage": "https://github.com/n1ghtm6r9/nm-utils#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@nestjs/typeorm": "^10.0.1",
+    "@nmxjs/constants": "^1.0.0",
+    "@nmxjs/types": "^1.0.0",
+    "big.js": "^6.2.1",
+    "moment": "^2.29.4",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.17",
+    "yaml": "^2.3.4"
+  }
+}
