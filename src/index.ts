@@ -46,4 +46,3 @@ export * from './GetBootMode';
 export * from './ReadableJson';
 export * from './BufferDebounce';
 export * from './GenerateSeed';
-export * from './WithCreateDbIfNotExists';
