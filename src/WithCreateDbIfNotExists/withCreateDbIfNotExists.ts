@@ -1,4 +1,3 @@
-import { DataSource } from 'typeorm';
 import type { TypeOrmModuleAsyncOptions } from '@nestjs/typeorm';
 import { EnvironmentEnum } from '@nmxjs/types';
 import { getEnvironment } from '../GetEnvironment';
@@ -8,7 +7,7 @@ export const withCreateDbIfNotExists =
   (...params) =>
     Promise.resolve(cb(...params)).then((options: any) =>
       getEnvironment() !== EnvironmentEnum.PRODUCTION && options.database
-        ? new DataSource({
+        ? new (require('typeorm').DataSource)({
             type: options.type,
             host: options.host,
             port: options.port,
