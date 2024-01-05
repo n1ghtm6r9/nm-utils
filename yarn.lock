@@ -36,10 +36,10 @@
     iterare "1.2.1"
     tslib "2.6.2"
 
-"@nmxjs/constants@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nmxjs/constants/-/constants-1.0.0.tgz#d7d82c19f3aa58bf64ce735edb870d7a9525a725"
-  integrity sha512-dNW7qob3tQ65KitQ86mXQHK/rii0dtBuMQqB6pdEq9u1R0OmrR6/aDUJTZfWZdm4XbtTcxNDoDUENapM8seYKw==
+"@nmxjs/constants@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@nmxjs/constants/-/constants-1.0.1.tgz#b3af8d336e2c04f2bf8edd5d4a9c614cf00a50cb"
+  integrity sha512-JoGvXqUq2CM/YsqjqmQTcascnY6ui9xecBTRgkFsQicw78PqCdXt0/fYfK4D4nWVcyrWDxjMG9d5YhIR3dt2GA==
 
 "@nmxjs/errors@^1.0.3":
   version "1.0.3"
@@ -227,6 +227,11 @@ undici-types@~5.26.4:
   version "5.26.5"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
+
+uuid@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
+  integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
 validator@^13.7.0:
   version "13.11.0"

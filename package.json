@@ -26,11 +26,12 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@nmxjs/constants": "^1.0.0",
+    "@nmxjs/constants": "^1.0.1",
     "@nmxjs/types": "^1.0.5",
     "big.js": "^6.2.1",
     "moment": "^2.29.4",
     "rxjs": "^7.8.1",
+    "uuid": "^9.0.1",
     "yaml": "^2.3.4"
   }
 }
