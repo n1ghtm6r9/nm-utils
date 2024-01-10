@@ -1,3 +1,4 @@
+export * from './Wait';
 export * from './Average';
 export * from './ArrLastItem';
 export * from './DecPercentage';
