@@ -1,6 +1,6 @@
 {
   "name": "@nmxjs/utils",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/n1ghtm6r9/nm-utils#readme",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^20.10.4",
     "typescript": "^5.1.6"
   },
@@ -29,6 +30,7 @@
     "@nestjs/common": "^10.3.0",
     "@nmxjs/constants": "^1.0.1",
     "@nmxjs/types": "^1.0.9",
+    "bcrypt": "^5.1.1",
     "big.js": "^6.2.1",
     "moment": "^2.29.4",
     "rxjs": "^7.8.1",
