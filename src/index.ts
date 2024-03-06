@@ -49,3 +49,4 @@ export * from './BufferDebounce';
 export * from './GenerateSeed';
 export * from './ComparePassword';
 export * from './EncryptPassword';
+export * from './CamelToSnakeCase';
