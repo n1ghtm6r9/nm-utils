@@ -50,3 +50,4 @@ export * from './GenerateSeed';
 export * from './ComparePassword';
 export * from './EncryptPassword';
 export * from './CamelToSnakeCase';
+export * from './ClearUndefined';
