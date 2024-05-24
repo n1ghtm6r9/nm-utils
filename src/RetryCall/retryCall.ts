@@ -7,6 +7,7 @@ export async function retryCall<T>({
   handler,
   retryCount = Infinity,
   retryTime = 3000,
+  logs = true,
 }: IRetryCallOptions<T>): Promise<Awaited<ReturnType<typeof handler>>> {
   let currentCount = 0;
 
@@ -17,7 +18,9 @@ export async function retryCall<T>({
       const payload = handler();
       return <any>await (isObservable(payload) ? firstValueFrom(payload) : payload);
     } catch (error) {
-      Logger.warn(`${error.message}, retry call after ${retryTime}ms`);
+      if (logs) {
+        Logger.warn(`${error.message}, retry call after ${retryTime}ms`);
+      }
       await sleep({ time: retryTime });
     }
   }
