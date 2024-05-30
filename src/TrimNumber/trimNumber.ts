@@ -3,7 +3,7 @@ import { numberToString } from '../NumberToString';
 import { ITrimNumberOptions } from './interfaces';
 
 export function trimNumber({ number, precision }: ITrimNumberOptions) {
-  const strNumber = numberToString(number);
+  const strNumber = typeof number === 'string' ? number : numberToString(number);
   const dotIndex = strNumber.indexOf('.');
 
   if (dotIndex === -1) {

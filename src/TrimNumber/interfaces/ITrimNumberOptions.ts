@@ -1,4 +1,4 @@
 export interface ITrimNumberOptions {
-  number: number;
+  number: number | string;
   precision: number;
 }
