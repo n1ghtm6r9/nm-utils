@@ -3,4 +3,5 @@ export interface IRetryCallOptions<T> {
   retryTime?: number;
   retryCount?: number;
   logs?: boolean;
+  validateError?: (error) => boolean;
 }
