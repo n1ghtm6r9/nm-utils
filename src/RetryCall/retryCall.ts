@@ -21,12 +21,13 @@ export async function retryCall<T>({
       return <any>await (isObservable(payload) ? firstValueFrom(payload) : payload);
     } catch (error) {
       lastError = error;
-      if (logs) {
-        Logger.warn(`${error.message}, retry call after ${retryTime}ms`);
-      }
 
       if (validateError && !validateError(error)) {
         break;
+      }
+
+      if (logs) {
+        Logger.warn(`${error.message}, retry call after ${retryTime}ms`);
       }
 
       await sleep({ time: retryTime });
