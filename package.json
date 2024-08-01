@@ -1,6 +1,6 @@
 {
   "name": "@nmxjs/utils",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/n1ghtm6r9/nm-utils#readme",
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
+    "@types/big.js": "^6.2.2",
     "@types/node": "^20.10.4",
     "typescript": "^5.1.6"
   },
