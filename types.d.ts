@@ -1,3 +1,9 @@
+declare module '@nestjs/common' {
+  class Logger {
+    static warn(str: string);
+  }
+}
+
 declare module '@nmxjs/types' {
   type FunctionType = any;
   type DecoratorHandler = any;

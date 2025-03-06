@@ -1,6 +1,6 @@
 {
   "name": "@nmxjs/utils",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,20 +24,20 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/big.js": "^6.2.2",
-    "@types/node": "^20.10.4",
+    "@types/node": "^22.13.9",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@nestjs/common": "^10.3.0",
     "@nmxjs/constants": "^1.0.1",
     "bcrypt": "^5.1.1",
     "big.js": "^6.2.1",
     "moment": "^2.29.4",
     "rxjs": "^7.8.1",
-    "uuid": "^9.0.1",
+    "uuid": "^11.1.0",
     "yaml": "^2.3.4"
   },
   "peerDependencies": {
-    "@nmxjs/types": "^1.0.10"
+    "@nmxjs/types": "^1.0.10",
+    "@nestjs/common": "^10.3.0"
   }
 }
