@@ -1,4 +1,3 @@
 import * as YAML from 'yaml';
-import { IYamlToObjOptions } from './interfaces';
 
-export const yamlToObj = <T>({ yaml }: IYamlToObjOptions): T => YAML.parse(yaml);
+export const yamlToObj = <T>(yaml: string): T => YAML.parse(yaml);

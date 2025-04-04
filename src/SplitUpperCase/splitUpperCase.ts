@@ -1,7 +1,4 @@
-import math from 'big.js';
-import { ISplitUpperCaseOptions } from './interfaces';
-
-export const splitUpperCase = ({ str }: ISplitUpperCaseOptions) =>
+export const splitUpperCase = (str: string) =>
   Array.from(str)
     .reduce((indexes: number[], letter, i) => {
       if (letter.toUpperCase() === letter) {
@@ -9,4 +6,4 @@ export const splitUpperCase = ({ str }: ISplitUpperCaseOptions) =>
       }
       return indexes;
     }, [])
-    .map((_, i, indexes) => str.slice(indexes[i], indexes[math(i).add(1).toNumber()]));
+    .map((_, i, indexes) => str.slice(indexes[i], indexes[i + 1]));

@@ -1,7 +1,6 @@
 import { gunzip } from 'zlib';
-import { IDecodeGzipStringOptions } from './interfaces';
 
-export const decodeGzipString = ({ data }: IDecodeGzipStringOptions) =>
+export const decodeGzipString = (data: string) =>
   new Promise<string>((resolve, reject) =>
     gunzip(Buffer.from(data, 'base64'), (err, buffer) => (err ? reject(err) : resolve(buffer.toString('utf-8'))))
   );

@@ -5,6 +5,6 @@ export async function wait(callback: () => any) {
     if (callback()) {
       break;
     }
-    await sleep({ time: 50 });
+    await sleep(50);
   }
 }

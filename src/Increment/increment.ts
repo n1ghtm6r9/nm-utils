@@ -1,3 +1,3 @@
-import math from 'big.js';
+import { sum } from '../Sum';
 
-export const increment = (value: number): number => math(value).add(1).toNumber();
+export const increment = (value: number): number => sum(value, 1);

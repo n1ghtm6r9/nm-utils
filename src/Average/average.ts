@@ -1,5 +1,8 @@
-import math from 'big.js';
-import { sum } from '../Sum';
-import { IAverageOptions } from './interfaces';
+import { div } from '../Div';
 
-export const average = (options: IAverageOptions) => math(sum(options)).div(options.numbers.length).toNumber();
+export const average = (numbers: number[], precision?: number) =>
+  div(
+    numbers.reduce((sum, v) => sum + v, 0),
+    numbers.length,
+    precision,
+  );

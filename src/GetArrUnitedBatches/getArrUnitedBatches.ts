@@ -1,4 +1,3 @@
-import math from 'big.js';
 import { IGetArrUnitedBatchesOptions } from './interfaces';
 
 export function getArrUnitedBatches<T>({ arr, length = arr.length }: IGetArrUnitedBatchesOptions<T>): T[][] {
@@ -8,10 +7,10 @@ export function getArrUnitedBatches<T>({ arr, length = arr.length }: IGetArrUnit
 
   const result = [];
 
-  const batchesCount = math(arr.length).minus(length).add(1).toNumber();
+  const batchesCount = arr.length - length + 1;
 
   for (let i = 0; i < batchesCount; i++) {
-    result.push(arr.slice(i, math(i).add(length).toNumber()));
+    result.push(arr.slice(i, i + length));
   }
 
   return result;

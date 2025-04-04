@@ -1,8 +1,6 @@
-import math from 'big.js';
 import { numberToString } from '../NumberToString';
-import { ITrimNumberOptions } from './interfaces';
 
-export function trimNumber({ number, precision }: ITrimNumberOptions): number {
+export function trimNumber(number: number | string, precision: number): number {
   const strNumber = typeof number === 'string' ? number : numberToString(number);
   const dotIndex = strNumber.indexOf('.');
 
@@ -10,8 +8,8 @@ export function trimNumber({ number, precision }: ITrimNumberOptions): number {
     return typeof number === 'string' ? parseFloat(number) : number;
   }
 
-  const nextIndexFromDot = math(dotIndex).add(1).toNumber();
+  const nextIndexFromDot = dotIndex + 1;
   const intPart = strNumber.substring(0, nextIndexFromDot);
 
-  return parseFloat(`${intPart}${strNumber.substring(nextIndexFromDot, math(precision).add(nextIndexFromDot).toNumber())}`);
+  return parseFloat(`${intPart}${strNumber.substring(nextIndexFromDot, precision + nextIndexFromDot)}`);
 }

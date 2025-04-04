@@ -1,5 +1,5 @@
-import math from 'big.js';
-import { IIncPercentageOptions } from './interfaces';
+import { sum } from '../Sum';
 import { getPercentageOfNumber } from '../GetPercentageOfNumber';
 
-export const incPercentage = (options: IIncPercentageOptions) => math(options.number).add(getPercentageOfNumber(options)).toNumber();
+export const incPercentage = (value: number, percent: number, precision?: number) =>
+  sum(value, getPercentageOfNumber(value, percent, precision), precision);

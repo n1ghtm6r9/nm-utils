@@ -1,3 +1,3 @@
-import math from 'big.js';
+import { subtract } from '../Subtract';
 
-export const decrement = (value: number): number => math(value).minus(1).toNumber();
+export const decrement = (value: number, precision?: number): number => subtract(value, 1, precision);

@@ -1,3 +1,1 @@
-import { IFirstLetterLowerCaseOptions } from './interfaces';
-
-export const firstLetterLowerCase = ({ str }: IFirstLetterLowerCaseOptions) => `${str.charAt(0).toLowerCase()}${str.slice(1)}`;
+export const firstLetterLowerCase = (str: string) => `${str.charAt(0).toLowerCase()}${str.slice(1)}`;

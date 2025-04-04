@@ -1,3 +1,1 @@
-import { IFirstLetterUpperCaseOptions } from './interfaces';
-
-export const firstLetterUpperCase = ({ str }: IFirstLetterUpperCaseOptions) => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
+export const firstLetterUpperCase = (str: string) => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;

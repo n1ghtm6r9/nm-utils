@@ -1,5 +1,3 @@
-import math from 'big.js';
-import { IGetPercentFirstFromSecondOptions } from './interfaces';
+import { div } from '../Div';
 
-export const getPercentFirstFromSecond = ({ first, second }: IGetPercentFirstFromSecondOptions) =>
-  math(100).mul(second).div(first).minus(100).toNumber();
+export const getPercentFirstFromSecond = (first: number, second: number, precision?: number) => div((100 * second) / first - 100, precision);

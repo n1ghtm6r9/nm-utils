@@ -30,7 +30,7 @@ export async function retryCall<T>({
         Logger.warn(`${error.message}, retry call after ${retryTime}ms`);
       }
 
-      await sleep({ time: retryTime });
+      await sleep(retryTime);
     }
   }
 

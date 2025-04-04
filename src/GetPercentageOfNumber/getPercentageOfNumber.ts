@@ -1,4 +1,3 @@
-import math from 'big.js';
-import { IGetPercentageOfNumberOptions } from './interfaces';
+import { mult } from '../Mult';
 
-export const getPercentageOfNumber = ({ number, percent }: IGetPercentageOfNumberOptions) => math(number).mul(math(percent).div(100)).toNumber();
+export const getPercentageOfNumber = (value: number, percentage: number, precision?: number) => mult(value, percentage / 100, precision);

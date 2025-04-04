@@ -12,7 +12,7 @@ export function waitHandlerInterval({ handler, time }: IWaitHandlerIntervalOptio
       if (!result) {
         break;
       }
-      await sleep({ time });
+      await sleep(time);
     }
   });
   return () => {

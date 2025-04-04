@@ -1,6 +1,4 @@
-import { IGetFullMessageFromErrorOptions } from './interfaces';
-
-export function getFullMessageFromError({ error }: IGetFullMessageFromErrorOptions) {
+export function getFullMessageFromError(error: any) {
   let message = `message: ${error.message}`;
 
   if (error.response?.data) {
