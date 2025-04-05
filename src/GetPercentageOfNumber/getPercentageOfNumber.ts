@@ -1,3 +1,3 @@
-import { mult } from '../Mult';
+import { mul } from '../Mul';
 
-export const getPercentageOfNumber = (value: number, percentage: number, precision?: number) => mult(value, percentage / 100, precision);
+export const getPercentageOfNumber = (value: number, percentage: number, precision?: number) => mul(value, percentage / 100, precision);

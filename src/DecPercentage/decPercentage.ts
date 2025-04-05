@@ -1,5 +1,5 @@
-import { subtract } from '../Subtract';
+import { sub } from '../Sub';
 import { getPercentageOfNumber } from '../GetPercentageOfNumber';
 
 export const decPercentage = (value: number, percent: number, precision?: number) =>
-  subtract(value, getPercentageOfNumber(value, percent, precision), precision);
+  sub(value, getPercentageOfNumber(value, percent, precision), precision);
