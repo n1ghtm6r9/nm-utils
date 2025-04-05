@@ -56,3 +56,4 @@ export * from './Subtract';
 export * from './GetPrecisionMult';
 export * from './Mult';
 export * from './Div';
+export * from './Sum';
